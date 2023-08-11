@@ -1,0 +1,243 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'Bebe' ;
+    src: url('BebasNeue-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'iDroid' ;
+    src: url('iDroid.otf') format('opentype');
+}
+
+:root {
+    --cor1: #89cda5;
+    --cor2: #1A5A37;
+    --cor3: #5CBE7D;
+    --cor4: #ade5c4;
+
+    --fonte-padrao: Arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: 'BebasNeue', cursive;
+    --font-android: 'iDroid', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #5CBE7D;
+    font-family: var(--fonte-padrao);
+}
+
+main {
+    min-width: 280px;
+    max-width: 1400px;
+    margin-bottom: 30px;
+
+}
+
+h1#cabeçalho {
+   font-family: 'bebe';
+   font-size: 30px;
+   font-weight: inherit;
+   font-size: 2em;
+   padding-bottom: 25px;
+   padding-top: 20px;
+   text-shadow: 2px 2px 3px rgb(59, 59, 59);
+}
+
+h2#cabeçalho {
+    font-size: 15px;
+    text-align: center;
+    font-family: arial;
+    color: white;
+    text-shadow: 1px 1px rgb(59,59,59);
+    padding-bottom: 18px;
+}
+
+h2#primeirotitulo {
+    font-weight: inherit;
+    font-family: 'iDroid';
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px 10px;
+    margin-left: 10px;
+    color: #1A5A37;
+    text-shadow: 2px 2px 3px rgb(59, 59, 59);
+}
+
+h2#subtitulo {
+    font-family: 'iDroid' ;
+    color: #1a5a37;
+    font-size: 2em;
+    text-shadow: 2px 2px 3px rgb(39, 39, 39);
+    text-align: center;
+}
+
+
+h4 {
+    font-weight: inherit;
+    font-family: 'iDroid';
+    text-align: left;
+    font-size: 30px;
+    background-image: linear-gradient(to right, #89cda5, 
+    transparent);
+    border-radius: 10px 10px;
+    margin-left: 10px;
+    color: #1A5A37;
+    text-shadow: 2px 2px 3px rgb(59, 59, 59);
+}
+
+header {
+    min-height: 150px;
+    font-family:var(--fonte-destaque)
+    font-size: 15px ;
+    font-weight: 100px;
+    text-shadow: 2px 2px 3px rgb(59, 59, 59);
+    color: white;
+    background-image: linear-gradient(to bottom, #89CDA5,
+    #5CBE7D, #1A5A37);
+    text-align: center;
+}
+
+nav {
+    color: white;
+    text-align: left;
+    font-size: 17px;
+    padding: 10px;
+    
+    font-weight: bold;
+}
+
+a#cabeçalho {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+
+a:hover#cabeçalho {
+    color: #ffffff;
+    background-color: var(--cor1);
+    border-radius: 5px;
+    transition-duration: 0.7s;
+}
+
+a:hover#corpo {
+    color: rgb(255, 255, 255);
+    background-color: #1A5A37;
+}
+
+
+p {
+    color: black;
+    text-align: justify;
+    text-indent: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 2em;
+    line-height: 2em;
+}
+
+a#corpo {
+    text-decoration: none;
+    padding: 3px;
+    color: #1A5A37;
+    font-weight: bold;
+}   
+
+div#video {
+    background-color: var(--cor2);
+    margin: 30px -7px 30px -7px;
+    padding: 10px;
+    padding-bottom: 40%;
+    position: relative;
+}
+
+div#video > iframe {
+    position: absolute;
+    top: 9%;
+    left: 5%;
+    right: 4%;
+    bottom: 5%;
+    width: 90%;    
+    height: 80%;
+    
+  
+}
+
+img {
+    width: 100%;
+}
+
+img#pequena {
+    display: block;
+    width: 200px;
+    margin: auto;
+}
+
+
+article {
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 10px;
+    margin-left: 140px;
+    margin-right: 140px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.897);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+p#rodape {
+    background-color: #ade5c4;;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;  
+    border-radius: 10px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.534);
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00a0\00a0';
+    padding: 12px;
+}   
+
+p#ultimo {
+    padding: 25px;
+}
+
+h3#rodape {
+    background-color: var(--cor2);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #1a5a37;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a{
+    text-decoration: none;  
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+}
+
+ footer a:hover {
+    background-color: var(--cor4);
+    color: var(--cor2);
+}
